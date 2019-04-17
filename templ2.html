@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" >
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        *
+        {
+            box-sizing: border-box;
+        }
+        .container
+        {
+            height: 100vh;
+            width: 100%;
+            
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+          position: relative;
+          
+        }
+        .surya
+        {
+            width: 50%;
+            height: 50vh;
+            
+            position: absolute;
+            bottom: 40%;
+            background-color: rgb(135, 206, 236);
+            
+            justify-content: flex-end;
+            
+        }
+        .list1
+        {
+            width: 100%;
+            height: 20%;
+            border: 2px solid rgb(135, 206, 236);
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+        }
+        .list1>li
+        {
+            list-style: none;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            height: 50px;
+            width: 15%;
+            text-align: center;
+            line-height: 70px;
+        transition: 1s;
+        }
+        .list1>li:hover
+        {
+            transition: 1s;
+            color: white;
+            cursor: pointer;
+        }
+        .part2
+        {
+            width: 50%;
+            height: 22vh;
+            display: flex;
+            position: absolute;
+            bottom: 58%;
+            background-color: rgb(238, 238, 238);
+            
+        }
+        .photo
+        {
+            width: 20%;
+            height: 22vh;
+            
+            background-image: url('ab.jpg');
+            background-size: cover;
+            background-color: rgb(184,184,184);
+            
+        }
+        .part3{
+            width: 50%;
+            height: 18vh;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            
+            position: absolute;
+            bottom: 40%;
+            background-color: rgb(145, 145,145);
+            
+        }
+        .icons
+        {
+            width: 80%;
+            height: 100%;
+            text-transform: capitalize;
+           left: 20%;
+            padding-left: 1%;
+            padding-right: 1%;
+            position: absolute;
+            padding-top: 1%;
+            text-align: justify;
+            font-family: 'Lato';
+           
+        }
+        .fa
+        {
+            position: absolute;
+            bottom:1%;
+            left: 2%;
+        }
+        .twi
+        {
+            position: absolute;
+            bottom: 1%;
+            left: 5%;
+        }
+        .you
+        {
+            position: absolute;
+            bottom: 1%;
+            left: 9%;
+        }
+        .inr
+        {
+         position: absolute;
+         bottom: 1%;
+         left: 13%;
+        }
+        .what
+        {
+            position: absolute;
+         bottom: 1%;
+         left: 17%;  
+        }
+        .goog
+        {
+            position: absolute;
+         bottom: 1%;
+         left: 21%; 
+        }
+        .phone
+        {
+            position: absolute;
+           top: 10%;
+          right: 27%;
+        }
+        .down
+        {
+            position: absolute;
+            top: 30%;
+            right: 16%;
+        }
+        .mob
+        {
+            position: absolute;
+            top: 50%;
+            right: 23%;
+        }
+        .mail
+        {
+            position: absolute;
+           top: 70%;
+            right: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+           <div class="surya">
+               <ul class="list1">
+                   <li>About Me</li>
+                   <li>Experience</li>
+                   <li>Education</li>
+                   <li>Portfolio</li>
+                   <li>Skills</li>
+                   <li>Contact Me</li>
+               </ul>
+           </div>
+           <div class="part2" >
+               
+            
+                <div class="photo"></div>
+                <div class="icons">
+                <h2>SURYANSH &nbsp GARG</h2>
+                <h4>Free lancer developer</h4>
+                   <div class="fa">
+                    <i class="fab fa-facebook-f"></i>
+                   </div>
+                   <div class="twi">
+                    <i class="fab fa-twitter"></i>
+                   </div>
+                   <div class="you">
+                    <i class="fab fa-youtube-square"></i>
+                   </div>
+                    <div class="inr">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="what">
+                        <i class="fab fa-whatsapp-square"></i>
+                    </div>
+                    <div class="goog">
+                        <i class="fab fa-google-plus-g"></i>
+                    </div>
+                    <div class="phone">
+                         <i class="fas fa-phone-square"></i>
+                         <span>0401445</span>
+                    </div>
+                    <div class="down">
+                            <i class="fas fa-download"></i>
+                            <span>download resume</span>
+                    </div>
+                    <div class="mob">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>7017546396</span>
+                    </div>
+                    <div class="mail">
+                            <i class="far fa-envelope"></i>
+                            <span>suryansh.garg234@gmail.com</span>
+                    </div>
+                </div>
+           </div>
+           <div class="part3">
+           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi aliquam similique architecto.</p>
+           </div>
+    </div>
+</body>
+</html>

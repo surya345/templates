@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato|Lobster|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="animated.css">
+   <link rel="stylesheet" href="hover.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <link rel="stylesheet" href="emoji.css">
+   <link rel="stylesheet" href="imagehover.css">
+
+   <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        *
+        {
+            box-sizing: border-box;
+        }
+
+        
+        .class1
+        {
+            width: 100%;
+            height: 100vh;
+            border: 2px solid black;
+            background-image: url('css.png');
+            background-size: cover;
+            filter: brightness
+            position: relative;
+            display: flex;
+            justify-content: center;           
+        }
+        .pas
+        {
+
+            position: absolute;
+            width: 80%;
+            height:80%; 
+            color: white;
+            font-size: 40px;
+            font-family: 'Lobster', cursive;   
+        }
+        .button
+       {
+            width: 20%;
+            height: 10%;
+            border: 2px,solid,white;
+            left: 35%;
+            position: absolute;
+            bottom: 20%;
+            
+       }
+       .headl
+       {
+        
+           color:white;
+           font-size: 30px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-family: 'Galada', cursive;  
+       }
+  
+      .btn
+      {
+        width: 100%;
+           height: 100%;
+           background-color: rgb(52, 152, 219);
+           border: none;
+           outline: none;
+           cursor: pointer;
+           font-size: 25px;
+           color: white;
+           font-family: 'Lobster', cursive;
+           border-radius: 5px;   
+       }
+     .text
+     {
+        width: 100%;
+            height: 75%;
+            position: absolute;
+            color: white;
+            font-size: 40px;
+            font-family: 'Lobster', cursive;
+     }
+     .heading
+       {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+       }
+
+        .class2
+
+        {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(236, 240, 241);
+            background-image: url('Green and Blue.jpg');
+            background-size: cover;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .item_container
+        {
+            width: 70%;
+            height: 60%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            justify-content: center;
+        }
+        .icon1,.icon3,.icon2
+        {
+            width: 33%;
+            height: 100%;
+            
+            margin: 10px;
+            position: relative;
+        }
+        .circle1
+        {
+            position: absolute;
+           width: 60%;
+           height: 40%;
+           
+           top: 5%;
+           left: 50%;
+           transform: translate(-50%);
+           border-radius: 50%;
+           box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           position: relative;
+        }
+        .fas
+        {
+            font-size: 70px;
+            position: absolute;
+            filter: grayscale(20%);
+            color:rgb(80, 191, 235);
+            
+        }
+        .weath
+       {
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%)
+
+       }
+       .data1
+       {
+            position: absolute;
+            width: 80%;
+            height: 35%;
+            
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:gray;
+            font-size: 19px;
+            font-family: 'Oswald', sans-serif;
+
+       }
+       .circle2
+       {
+            position: absolute;
+            width: 60%;
+            height: 40%;
+           
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+       .far
+       {
+        font-size: 70px;
+            position: absolute;
+            color:black;
+            
+       }
+       .tar
+       {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%)
+       }
+       .data2
+       {
+            position: absolute;
+            width: 80%;
+            height: 35%;
+            
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:gray;
+            font-size: 19px;
+            font-family: lato;
+
+       }
+       .circle3
+       {
+            position: absolute;
+            width: 60%;
+            height: 40%;
+           
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0 ,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+       .time
+       {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%)
+       }
+       .data3
+       {
+            position: absolute;
+            width: 80%;
+            height: 35%;
+            
+            bottom: 5%;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:gray;
+            font-size: 19px;
+            font-family: lato;
+
+       }
+        .class3
+        {
+            width: 100%;
+            height: 80vh;
+          
+            display: flex;
+            background-color: rgb(236,240,241);
+        }
+        .subcontainer1,.subcontainer2
+        {
+            width: 50%;
+            height: 100%;
+           
+            position: relative;
+            
+        }
+        
+        .subcontainer2
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:rgb(245,245,245);
+            
+            
+        }
+        .content
+        {
+            width: 80%;
+            height: 80%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            flex-direction: column;   
+        }
+        
+
+        .class4
+        {
+            width: 100%;
+            height: 100vh;
+    
+            position: relative;
+            background-color:rgba(243, 240, 240, 0.856);
+        }
+        .blog
+       {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translateX(-50%);
+
+       }
+       .shel
+       { 
+        
+           position: absolute;
+           width:67%;
+           height: 70%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           left: 50%;
+           transform: translateX(-50%);
+           top: 20%;
+       }
+       .content1,.content2,.content3
+       {
+            width:30%;
+            height: 100%;
+            
+            margin: 23px;
+            position: relative;
+       }
+        .class5
+        {
+            width: 100%;
+            height: 130vh;
+            
+            position: relative;
+          
+        }
+        .main
+        {
+            width: 80%;
+            height: 80%;
+            
+            position: absolute;
+            left: 10%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        .shelza
+        {
+            width:50%;
+            height: 100%;
+           
+            position: relative;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .block
+        {
+            width:50%;
+            height: 100%;
+            
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .image1
+        {
+            width: 80%;
+            height: 50%;
+           
+            position: absolute;
+            background-image: url('gop.jpg');
+            background-size: cover;
+            filter: brightness:20%;
+        }
+        .image2
+        {
+            background-image: url('soury.jpg');
+            background-size: cover;
+            
+            position: absolute;
+            width: 110%;
+            height: 35%;
+         
+            position: absolute;
+            bottom: 5%
+            
+        }
+        .image3
+        {
+            
+            
+            width: 100%;
+            height: 50%;
+            
+            position: absolute;
+            left: 90%;
+            
+        }
+        .image4
+        {
+            
+            width: 70%;
+            height: 40%;
+            
+            position: absolute;
+            bottom: 5%;
+            left: 30%;
+            transform: translateX(-14%);
+        }
+
+        
+      
+
+         .class6
+       {
+            width: 100%;
+            height: 70vh;
+            border: 2px solid green;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(68,81,100);
+
+       }
+       .text1
+       {
+            width: 70%;
+            height: 35%;
+           
+            position: absolute;
+            top: 20%;
+            font-size: 35px;
+            color: aliceblue;
+            font-family: 
+
+
+
+       }
+       .button1
+       {
+            width: 20%;
+            height: 15%;
+           
+            position: absolute;
+            bottom: 20%;
+
+       }
+       .btn1
+      {
+        width: 100%;
+           height: 100%;
+           background-color: rgb(183, 197, 206);
+           border: none;
+           outline: none;
+           cursor: pointer;
+           font-size: 25px;
+           color: rgb(88, 85, 85);
+           font-family: 'Lobster', cursive;
+           border-radius: 5px;
+           
+       }
+        .class7
+        {
+            width: 100%;
+            height: 50vh;
+            border: 2px solid pink;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .nav
+        {
+            width: 70%;
+            height: 30%;
+            
+            position: absolute;
+            top: 20%;
+            font-family: 'Lato', sans-serif;
+            color: rgb(41, 12, 68);
+       }
+       .last
+       {
+           width: 70%;
+           height: 30%;
+           position: absolute;
+           bottom: 20%;
+           border: 2px solid red;
+           font-size: 10px;
+
+       }
+       .asha
+       {
+           font-size: 15px;
+       }
+       .lk
+       {
+         height: 58%;
+         width: 100%;
+         filter: grayscale(50%);
+       }
+       .lk1
+       {
+         height: 58%;
+         width: 100%;
+         
+       }
+       .lk2
+       {
+         height: 58%;
+         width: 100%;
+         
+       }
+       .mn
+       {
+         font-family: lato;
+         position: absolute;
+         bottom: 23%;
+         color: rgba(122, 120, 120, 0.973);
+         
+         
+       }
+       .nm
+       {
+        color:gray;
+            font-size: 22px;
+            font-family: lato;
+            position: absolute;
+            
+            
+            bottom: 1%;
+
+       }
+       .zx
+       {
+           font-size: 35px;
+           font-family: 'Indie Flower', cursive;
+       }
+       .fa-copyright
+       {
+           font-size: 10px;
+       }
+        
+       
+    
+    </style>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+</head>
+<body>
+    
+    <div class="class1">
+            <div class="pas">
+                <p class="headl">PASSION</p>
+                <hr color="white">
+                <div class="text"> <p align="center" class="zoomInUp animated">PASSION &nbsp;&nbsp; A &nbsp;&nbsp;  RESPONSIVE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> EMAIL &nbsp;&nbsp; TEMPLATE</p>
+                   
+               
+                </div>
+                <div class="button zoomIn animated " data-wow-delay="2s">
+                        <button class="btn hvr-bob">Explore</button></div>
+            </div>
+             
+        
+        
+    </div>
+    <div class="class2">
+            <div id="wowslider-container1">
+                    
+                       
+            </div>
+        <h1 align="center" class="heading">FEATURES</h1>
+        <div class="item_container">
+            <div class="icon1">
+                    <div class="circle1">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="weath">THE WEATHER</div>
+                    <div class="data1">
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur, 
+                           adipisicing elit. 
+                          <br> Ad possimus est 
+                           nesciunt?
+                        </p>
+                    </div>
+            </div>
+            
+            <div class="icon2">
+                    <div class="circle2">
+                        <i class="far fa-dot-circle"></i>
+                    </div>
+                    <div class="tar">THE TARGET </div>
+                    <div class="data2">
+                        <p>
+                            morbi non efficitur nibh<br>
+                            duis amet eroest fusce<br>
+                            faucibus ante libero ital<br>
+                            &nbsp; &nbsp;luctus egestes sed.
+                        </p>
+                    </div>
+            </div>
+            <div class="icon3">
+                <div class="circle3">
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="time">THE TIME</div>
+                <div class="data3">
+                    <p>
+                        morbi non efficitur nibh<br>
+                        duis amet eroest fusce<br>
+                        faucibus ante libero ital<br>
+                        &nbsp; &nbsp;luctus egestes sed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="class3">
+        <div class="subcontainer1">
+                <figure class="imghvr-zoom-out-left">
+                        <img src="abcd.jpg" width="100%" height="490">
+                        <figcaption>
+                            <img src="abcd2.jpg" alt="hello" width=100% height=100%>
+                        </figcaption>
+                        </figure>
+        </div>
+        <div class="subcontainer2">
+            <div class="content">
+                <p>
+                    <q>
+                        DUIS EGIET EUISMOD ET <BR><br>
+                        &nbsp;&nbsp;
+                        LOREM PLACERAT TORTOR<BR><br> &nbsp;&nbsp;
+                        PROIN CONSEQUAT QUAM <BR> <br>&nbsp;&nbsp;
+                        LIBERO JUSTO.
+                
+                        </q>
+                        <hr>
+                       jhon doe
+
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="class4">
+            <h1 align="center" class="blog">THE BLOG</h1>
+
+            <div class="shel">
+      
+                  <div class="content1">
+                      <img  class="lk" src="surya3.jpeg" >
+                      
+                      <p class="mn">
+                         <b> <font size="5">PUSTCE &nbsp; &nbsp; FAUCIBUSY<BR>
+                            ANTE  &nbsp;LIBERO.</b></font>
+                      </p>
+                      <p class="nm">
+                          cras &nbsp;&nbsp;interdum &nbsp;&nbsp; vestum a&nbsp; <br>
+                          dotor&nbsp; amet &nbsp; tursisi &nbsp; ligula<br>
+                          rhoncus &nbsp;sodals.
+                      </p>
+                  </div>
+                  <div class="content2">
+                        <img  class="lk1" src="surya1.jpg" >
+                        <p class="mn">
+                                <b> <font size="5">PUSTCE &nbsp; &nbsp; FAUCIBUSY<BR>
+                                   ANTE  &nbsp;LIBERO.</b></font>
+                             </p>
+                             <p class="nm">
+                                 cras &nbsp;&nbsp;interdum &nbsp;&nbsp; vestum a&nbsp; <br>
+                                 dotor&nbsp; amet &nbsp; tursisi &nbsp; ligula<br>
+                                 rhoncus &nbsp;sodals.
+                             </p>
+                  </div>
+                  <div class="content3">
+                        <img  class="lk2" src="surya.jpg" >
+                        <p class="mn">
+                                <b> <font size="5">PUSTCE &nbsp; &nbsp; FAUCIBUSY<BR>
+                                   ANTE  &nbsp;LIBERO.</b></font>
+                             </p>
+                             <p class="nm">
+                                 cras &nbsp;&nbsp;interdum &nbsp;&nbsp; vestum a&nbsp; <br>
+                                 dotor&nbsp; amet &nbsp; tursisi &nbsp; ligula<br>
+                                 rhoncus &nbsp;sodals.
+                             </p>
+                  </div>
+      
+    </div>
+    </div>
+    <div class="class5">
+        <h1 align="center" class="headingb">THE GALLERY</h1>
+        <div class="main">
+            <div class="shelza">
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <div class="image3">
+                    <img src="sury.jpg" height="100%" width="100%">
+                </div>
+            </div>
+            <div class="block">
+                    
+                    <div class="image4">
+                            <img src="sur3.jpg" height="100%" width="100%">
+                    </div>
+            </div>
+
+
+            
+            
+          
+        </div>
+        
+    </div>
+    <div class="class6">
+
+            <div class="text1">
+                    <p align="center" >PASSION &nbsp;&nbsp; FREE &nbsp;&nbsp; RESPONSIVE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> EMAIL &nbsp;&nbsp; TEMPLATE</p>
+                   
+            </div>
+            
+            <div class="button1">
+                    <button class="btn1 ">GET &nbsp; IT &nbsp; NOW</button>
+            </div>
+
+
+    </div>
+    <div class="class7">
+        <div class="nav">
+            <b class="zx">
+                Passion
+            </b> <b class="asha">
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;       &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;       &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;       &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;       &nbsp;&nbsp;
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;   
+
+            
+            &nbsp;&nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp;
+            about
+            &nbsp;&nbsp;    &nbsp;&nbsp; contact      &nbsp;&nbsp;  &nbsp;&nbsp; term </b>
+        </div>
+        <div class="last">
+            
+            <i class="far fa-copyright"></i></b>
+        </div>
+    </div>
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+    <script src="wow.js"></script>
+    <script>
+         new WOW().init();
+    </script>
+
+</body>
+</html>

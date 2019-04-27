@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pong</title>
+    <style>
+    	* { 
+    		padding: 0;
+    		 margin: 0; 
+    	  }
+    	canvas 
+    	{ 
+    		background: black;
+    		 display: block; 
+    		 margin: 0 auto; 
+    		 position: absolute;
+    		 top: 50%;
+    		 left: 50%;
+    		 transform: translate(-50%,-50%);
+    	}
+    </style>
+</head>
+<body>
+<center>
+	<h1>Canvas Area</h1>
+<canvas id="area" width="600" height="400"></canvas>
+</center>
+<script>
+var canvas = document.getElementById("area");
+var ctx = canvas.getContext("2d");
+var x = canvas.width/2; // ball position
+var y = canvas.height-30; // ball position
+var dx = 2; // speed of ball
+var dy = -2; // speed of ball
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, 10, 0, Math.PI*2);
+    ctx.fillStyle = "white";
+    ctx.fill();
+    ctx.closePath();
+}
+
+function draw() {
+   ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    x += dx;
+    y += dy;
+}
+
+//draw();
+
+setInterval(draw, 10);
+</script>
+
+</body>
+</html>

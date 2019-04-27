@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Pong</title>
+    <style>
+    	* { 
+    		padding: 0;
+    		 margin: 0; 
+    	  }
+    	canvas 
+    	{ 
+    		background: black;
+    		 display: block; 
+    		 margin: 0 auto; 
+    		 position: absolute;
+    		 top: 50%;
+    		 left: 50%;
+    		 transform: translate(-50%,-50%);
+    	}
+    </style>
+</head>
+<body>
+<center>
+	<h1>Canvas Area</h1>
+<canvas id="area" width="600" height="400"></canvas>
+</center>
+<script>
+	var canvas = document.getElementById("area");
+var ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+ctx.rect(30, 50, 50, 50);
+ctx.fillStyle = "green";
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.arc(240, 160, 20, 0, Math.PI*2,true);
+ctx.fillStyle = "red";
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.rect(160, 10, 100, 40);
+ctx.strokeStyle = "white";
+ctx.stroke();
+ctx.closePath()
+</script>
+
+</body>
+</html>

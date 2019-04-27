@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="hover.css">
+    <title>Document</title>
+    <style>
+        html,body
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        *
+        {
+            box-sizing: border-box;
+            user-select: none;
+        }
+        .container1
+        {
+            position: relative;
+            width: 100%;
+            height: 93vh;
+        }
+        .cls1
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 95, 110, 0.9);
+        }
+        .cls2
+        {
+            position: absolute;
+            width: 60%;
+            height: 80%;
+            top: 10%;
+            left: 20%;
+        }
+        .cls7
+        {
+            position: absolute;
+            width: 18%;
+            height: 28%;
+            left: 40%;
+            top: 12%;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cls3
+        {
+            position: absolute;
+            width: 92%;
+            height: 92%;
+            border-radius: 50%;
+            background-image: url('b.jpg');
+            background-size: cover;
+        }
+        .cls4
+        {
+            position: absolute;
+            width: 60%;
+            height: 12%;
+            top: 45%;
+            left: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+            color: white;
+        }
+        .cls5
+        {
+            position: absolute;
+            width: 60%;
+            height: 12%;
+            top: 57%;
+            left: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            font-size: 32px;
+        }
+        .cls6
+        {
+            position: absolute;
+            width: 25%;
+            height: 10%;
+            left: 37.5%;
+            top: 75%;
+            border: 1.5px solid white;
+            border-radius: 5px;
+        }
+        .cls6>button
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: darkgreen;
+            font-size: 18px;
+            background-color: rgba(255, 95, 110, 0.9);
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+        .cls6>button:hover
+        {
+            background-color:whitesmoke;
+            color: rgba(255, 95, 110, 0.9);
+            font-size: 18px;
+        }
+        .container2
+        {           
+            position: absolute;
+            width: 100%;
+            height: 12vh;
+            top: 0%;
+            background-color: rgb(10, 22, 38);
+            position: sticky;
+            z-index: 100;
+            box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.1);
+        }
+        .cls8,.cls9,.cls10,.cls11,.cls12,.cls13
+        {
+            position: absolute;
+            width: 8%;
+            height: 50%;
+            top: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
+        .cls8>a,.cls9>a,.cls10>a,.cls11>a,.cls12>a,.cls13>a
+        {
+            text-decoration: none;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .cls8>a:hover,.cls9>a:hover,.cls10>a:hover,.cls11>a:hover,.cls12>a:hover,.cls13>a:hover
+        {
+            color: rgb(178, 73, 87);
+        }
+        .cls8
+        {
+            left: 21%;
+        }
+        .cls9
+        {
+            left: 30%;
+        }
+        .cls10
+        {
+            left: 39%;
+        }
+        .cls11
+        {
+            left: 49%;
+        }
+        .cls12
+        {
+            left: 59%;
+        }
+        .cls13
+        {
+            left: 69%;
+        }
+        .container3
+        {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+        }
+        .container4
+        {
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;        
+        }
+        .cls14
+        {
+            position: absolute;
+            width: 25%; 
+            height: 10%;
+            left: 37.5%;
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-weight: 450;
+        }
+        .cls15
+        {
+            position: absolute;
+            width: 35%;
+            height: 8%;
+            top: 14%;
+            left: 32.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 0;
+        }
+        .cls16
+        {
+            position: absolute;
+            width: 25%;
+            height: 8%;
+            right: 25%;
+            top: 25%;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 430;
+        }
+        .cls17,.cls18
+        {
+            position: absolute;
+            width: 35%;
+            height: 22%;
+            right: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14.9px;
+            color: rgb(50, 50, 50, 0.75);
+        }
+        .cls17
+        {
+            top: 30%;
+        }
+        .cls18
+        {
+            top: 44%;
+        }
+        .cls19,.cls20,.cls21
+        {
+            position: absolute;
+            width: 30%;
+            height: 5%;
+            right: 20%;
+            font-size: 12px;
+            color: rgb(80, 80, 80, 0.9);
+        }
+        .cls19
+        {
+            top: 65%;
+        }
+        .cls20
+        {
+            top: 70%;
+        }
+        .cls21
+        {
+            top: 75%;
+        }
+        .cls22
+        {
+            position: absolute;
+            left: 0%;
+            color: red;
+        }
+        .cls23
+        {
+            position: absolute;
+            left: 10%;
+        }
+        .cls24
+        {
+            position: absolute;
+            width: 28%;
+            height: 62%;
+            top: 27%;
+            left: 17%;
+            background-image: url('d.jpg');
+            background-size: cover;
+        }
+        .container4
+        {
+            position: relative;
+            width: 100%;
+            height: 88vh;
+            background-color: rgb(255, 75, 75);
+        }
+        .cls25
+        {
+            position: absolute;
+            width: 20%;
+            height: 10%;
+            top: 8%;
+            left: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 450;
+            color: white;
+        }
+        .cls26
+        {
+            position: absolute;
+            width: 40%;
+            height: 8%;
+            top: 18%;
+            left: 30%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            color: white;
+            font-weight: 420;
+        }
+        .cls27,.cls28,.cls29,.cls30
+        {
+            position: absolute;
+            width: 8%;
+            height: 17.5%;
+            border-radius: 50%;
+            border: 1px solid white;
+            top: 42%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            color: white;
+        }
+        .cls27
+        {
+            left: 15%;
+        }
+        .cls28
+        {
+            left: 35%;
+        }
+        .cls29
+        {
+            left: 55%;
+        }
+        .cls30
+        {
+            left: 75%;
+        }
+        .cls31,.cls32,.cls33,.cls34
+        {
+            position: absolute;
+            width: 15%;
+            height: 8%;
+            top: 62%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 23px;
+            font-weight: bold;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .cls31
+        {
+            left: 11%;
+        }
+        .cls32
+        {
+            left: 31%;
+        }
+        .cls33
+        {
+            left: 51%;
+        }
+        .cls34
+        {
+            left: 71%;
+        }
+        .cls35,.cls36,.cls37,.cls38
+        {
+            position: absolute;
+            width: 20%;
+            height: 18%;
+            top: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .cls35
+        {
+            left: 9%;
+        }
+        .cls36
+        {
+            left: 29%;
+        }
+        .cls37
+        {
+            left: 49%;
+        }
+        .cls38
+        {
+            left: 69%;
+        }
+        .container5
+        {
+            position: relative;
+            width: 100%;
+            height: 115vh;
+            background-color: rgb(10, 22, 38);
+        }
+        .cls39
+        {
+            position: absolute;
+            width: 25%;
+            height: 10%;
+            top: 8%;
+            left: 37.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            color: white;
+        }
+        .cls40
+        {
+            position: absolute;
+            width: 25%;
+            height: 50%;
+            top: 27.5%;
+            left: 8%;
+        }
+        .cls41
+        {
+            position: absolute;
+            width: 50%;
+            height: 60%;
+            top: 27.5%;
+            right: 11%;
+        }
+        .cls42,.cls43,.cls44,.cls45,.cls46,.cls47
+        {
+            position: absolute;
+            width: 80%;
+            height: 10%;
+            left: 5%;
+            display: flex;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+        .cls42
+        {
+            top: 5%;
+            font-size: 17px;
+            font-weight: 450;
+            color: rgb(125, 133, 144);
+        }
+        .cls43
+        {
+            top: 14%;
+            font-size: 15px;
+            font-weight: 450;
+        }
+        .cls44
+        {
+            top: 29%;
+            font-size: 17px;
+            font-weight: 450;
+            color: rgb(125, 133, 144);
+        }
+        .cls45
+        {
+            top: 37.5%;
+            font-size: 15px;
+            font-weight: 450;
+        }
+        .cls46
+        {
+            top: 54%;
+            font-size: 17px;
+            font-weight: 450;
+            color: rgb(125, 133, 144);
+        }
+        .cls47
+        {
+            top: 62%;
+            font-size: 15px;
+            font-weight: 450;
+        }
+        .cls48,.cls49,.cls50,.cls51
+        {
+            position: absolute;
+            width: 11%;
+            height: 10%;
+            top: 77%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+        }
+        .cls48
+        {
+            left: 5%;
+        }
+        .cls49
+        {
+            left: 20%;
+        }
+        .cls50
+        {
+            left: 35%;
+        }
+        .cls51
+        {
+            left: 50%;
+        }
+        .cls52,.cls53
+        {
+            position: absolute;
+            width: 95%;
+            height: 11%;
+            border: 1px solid white;
+            left: 1%;
+            border-radius: 5px;
+        }
+        .cls52
+        {
+            top: 5%;
+        }
+        .cls53
+        {
+            top: 21%;
+        }
+        .cls57,.cls58
+        {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(10, 22, 38);
+            border: none;
+            outline: none;
+            padding-left: 2%;
+            color: white;
+        }
+        .cls57::placeholder,.cls58::placeholder
+        {
+            font-weight: 450;
+        }
+        .cls54
+        {
+            position: absolute;
+            width: 95%;
+            height: 50%;
+            border: 1px solid white;
+            border-radius: 5px;
+            left: 1%;
+            top: 37%;
+        }
+        .cls59
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(10, 22, 38);
+            border: none;
+            outline: none;
+            color: white;   
+            padding-left: 2%;    
+        }
+        .cls59::placeholder
+        {
+            padding-top: 2%;
+            font-size: 15px;
+            font-weight: 450;
+        }
+        .cls55
+        {
+            position: absolute;
+            width: 13%;
+            height: 6.5%;
+            top: 82%;
+            left: 39.5%;
+        }
+        .cls60
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(255, 75, 75);
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .cls60:hover
+        {
+            background-color: white;
+            color:rgba(0, 0, 0, 0.7);
+            outline: steelblue;
+        }
+        .cls61
+        {
+            position: absolute;
+            width: 25%;
+            height: 10%;
+            top: 63%;
+            left: 8%;
+        }
+        .cls56
+        {
+            position: absolute;
+            width: 80%;
+            height: 0.1%;
+            left: 10%;
+            top: 92%;
+            border: 1px solid rgba(75, 75, 75, 0.2);
+        }
+        .cls62
+        {
+            position: absolute;
+            width: 60%;
+            height: 8%;
+            top: 92%;
+            left: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cls63
+        {
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        .cls64
+        {
+            color: red;
+        }
+        .container6
+        {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+        }
+        .cls65
+        {
+            position: absolute;
+            width: 30%;
+            height: 10vh;
+            top: 15%;
+            left: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 30px;
+            font-weight: 450;
+        }
+        .cls66
+        {
+            position: absolute;
+            width: 40%;
+            height: 30vh;
+            top: 30%;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: rgb(65, 65, 65);
+        }
+        .cls67,.cls68,.cls69,.cls70,.cls71
+        {
+            position: absolute;
+            width: 40%;
+            height: 4.5vh;
+            right: 8%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+            color: rgb(200, 200, 200);
+        }
+        .cls67
+        {
+            top: 21%;
+        }
+        .cls68
+        {
+            top: 32%;
+        }
+        .cls69
+        {
+            top: 43%;
+        }
+        .cls70
+        {
+            top: 54%;
+        }
+        .cls71
+        {
+            top: 65%;
+        }
+        .cls72
+        {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(45, 102, 151);
+        }
+        .cls73
+        {
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            left: 25%;
+            background-color: rgb(52, 122, 182);
+        }
+        .cls74
+        {
+            position: absolute;
+            width: 35%;
+            height: 100%;
+            background-color: rgb(245, 245, 245);
+            right: 0%;
+        }
+        .cls74>p
+        {
+            position: absolute;
+            right: 2%;
+            top: -50%;
+            color: rgb(100, 100, 100);
+        }
+        .cls75
+        {
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(77, 152, 83);
+        }
+        .cls76
+        {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            left: 20%;
+            background-color: rgb(93, 183, 96);
+        }
+        .cls77
+        {
+            position: absolute;
+            width: 55%;
+            height: 100%;
+            background-color: rgb(245, 245, 245);
+            right: 0%;
+        }
+        .cls77>p
+        {
+            position: absolute;
+            right: 2%;
+            top: -50%;
+            color: rgb(100, 100, 100);
+        }
+        .cls78
+        {
+            position: absolute;
+            width: 15%;
+            height: 100%;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(82, 158, 182);
+        }
+        .cls79
+        {
+            position: absolute;
+            width: 10%;
+            height: 100%;
+            left: 15%;
+            background-color: rgb(93, 190, 225);
+        }
+        .cls80
+        {
+            position: absolute;
+            width: 75%;
+            height: 100%;
+            background-color: rgb(245, 245, 245);
+            right: 0%;
+        }
+        .cls80>p
+        {
+            position: absolute;
+            right: 2%;
+            top: -50%;
+            color: rgb(100, 100, 100);
+        }
+        .cls81
+        {
+            position: absolute;
+            width: 35%;
+            height: 100%;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(196, 143, 67);
+        }
+        .cls82
+        {
+            position: absolute;
+            width: 40%;
+            height: 100%;
+            left: 35%;
+            background-color: rgb(239, 173, 77);
+        }
+        .cls83
+        {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            background-color: rgb(245, 245, 245);
+            right: 0%;
+        }
+        .cls83>p
+        {
+            position: absolute;
+            right: 4%;
+            top: -50%;
+            color: rgb(100, 100, 100);
+        }
+        .cls84
+        {
+            position: absolute;
+            width: 22%;
+            height: 100%;
+            padding-left: 2%;
+            display: flex;
+            align-items: center;
+            background-color: rgb(179, 71, 68);
+        }
+        .cls85
+        {
+            position: absolute;
+            width: 60%;
+            height: 100%;
+            left: 22%;
+            background-color: rgb(217, 84, 79);
+        }
+        .cls86
+        {
+            position: absolute;
+            width: 18%;
+            height: 100%;
+            background-color: rgb(245, 245, 245);
+            right: 0%;
+        }
+        .cls86>p
+        {
+            position: absolute;
+            right: 6%;
+            top: -50%;
+            color: rgb(100, 100, 100);
+        }
+        .container7
+        {
+            position: relative;
+            width: 100%;
+            height: 120vh;
+        }
+        .cls87
+        {
+            position: absolute;
+            width: 25%;
+            height: 10vh;
+            left: 37.5%;
+            top: 4vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 35px;
+        }
+        .cls88
+        {
+            position: absolute;
+            top: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: 30%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 15px;            
+        }
+        .cls89,.cls90,.cls91,.cls92,.cls93
+        {
+            position: absolute;
+            width: 10%;
+            height: 7vh;
+            border: 1px solid rgb(100, 100, 100);
+            top: 28vh;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 12px;
+            color: rgb(100, 100, 100);
+        }
+        .cls89
+        {
+            left: 20%;
+        }
+        .cls90
+        {
+            left: 31%;
+        }
+        .cls91
+        {
+            left: 42%;
+        }
+        .cls92
+        {
+            left: 53%;
+        }
+        .cls93
+        {
+            left: 64%;
+        }
+        .cls89:hover,.cls90:hover,.cls91:hover,.cls92:hover,.cls93:hover
+        {
+            cursor: pointer;
+            background-color: rgb(250, 76, 75);
+        }
+        .cls94,.cls95,.cls96,.cls97,.cls98,.cls99,.cls100,.cls101
+        {
+            position: absolute;
+            width: 25%;
+            height: 35vh;
+        }
+        .cls94
+        {
+            top: 40vh;
+            background-image: url('e.jpg');
+            background-size: cover;
+        }
+        .cls95
+        {
+            top: 40vh;
+            left: 25%;
+            background-image: url('f.jpg');
+            background-size: cover;
+        }
+        .cls96
+        {
+            top: 40vh;
+            left: 50%;
+            background-image: url('h.jpg');
+            background-size: cover;
+        }
+        .cls97
+        {
+            top: 40vh;
+            left: 75%;
+            background-image: url('k.jpg');
+            background-size: cover;
+        }
+        .cls98
+        {
+            top: 75vh;
+            background-image: url('g.jpg');
+            background-size: cover;
+        }
+        .cls99
+        {
+            top: 75vh;
+            left: 25%;
+            background-image: url('j.jpg');
+            background-size: cover;
+        }
+        .cls100
+        {
+            top: 75vh;
+            left: 50%;
+            background-image: url('l.jpeg');
+            background-size: cover;
+        }
+        .cls101
+        {
+            top: 75vh;
+            left: 75%;
+            background-image: url('i.jpg');
+            background-size: cover;
+        }
+        .cls102
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+            opacity: 0.5;
+            visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cls103
+        {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            border: 1px solid white;
+            opacity: 1;
+           
+            transition: width 1s, height 1s, margin 1s;
+        }
+        .cls102:hover .cls103
+        {
+            width: 80%;
+            height: 70%;
+        }
+        .cls104
+        {
+            opacity: 1;
+            position: absolute;
+            width: 100%;
+            height: 80%;
+            top: 75%;
+           
+            transition: top 1s;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .cls102:hover .cls104
+        {
+            top: 40%;
+        }
+        .cls94:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls95:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls96:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls97:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls98:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls99:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls100:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls101:hover .cls102
+        {
+            cursor: pointer;
+            visibility: visible;
+        }
+        .cls105
+        {
+            position: absolute;
+            font-size: 30px;
+            left: 35%;
+            top: 5%;
+        }
+        .cls106
+        {
+            position: absolute;
+            font-size: 40px;
+            font-weight: 450;
+            top: 25%;
+            left: 30%;
+        }
+        .cls107
+        {
+            position: absolute;
+            top: 55%;
+            left: 20%;
+        }
+        .container8
+        {
+            position: relative;
+            width: 100%;
+            height: 210vh;
+            border: 2px solid black;
+        }
+        .cls108
+        {
+            position: absolute;
+            width: 8%;
+            height: 9vh;
+            border: 2px solid rgb(247, 77, 77);
+            border-radius: 5px;
+            top: 7%;
+            left: 46%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(247, 77, 77);
+            color: white;
+            font-size: 20px;
+        }
+        .cls109
+        {
+            position: absolute;
+            width: 0.1%;
+            height: 180vh;
+            border: 0.5px solid rgb(247, 77, 77);
+            left: 50%;
+            top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cls110,.cls111,.cls112,.cls113,.cls114,.cls115
+        {
+            position: absolute;
+            width: 35%;
+            height: 35vh;
+            border: 2px solid rgb(245, 245, 245);
+            border-radius: 10px;
+            background-color: rgb(245, 245, 245);
+            z-index: 10;
+            transition: 0.5s;
+        }
+        .cls110,.cls111,.cls112
+        {
+            left: 10%;
+            box-shadow: -10px 10px 0px rgba(245, 245, 245, 0.8);
+        }
+        .cls110
+        {
+            top: 33vh;
+        }
+        .cls111
+        {
+            top: 85vh;
+        }
+        .cls112
+        {
+            top: 153vh;
+        }
+        .cls113,.cls114,.cls115
+        {
+            right: 10%;
+            box-shadow: 10px 10px 0px rgba(245, 245, 245, 0.8);
+        }
+        .cls113
+        {
+            top: 39vh;
+        }
+        .cls114
+        {
+            top: 92vh;
+        }
+        .cls115
+        {
+            top: 159vh;
+        }
+        .cls116
+        {
+            position: absolute;
+            width: 14%;
+            height: 10vh;
+            background-color: rgb(245, 245, 245);
+            border: 2px solid rgb(245, 245, 245);
+            right: -2%;
+            top: 5vh;
+            transform: rotateZ(45deg);
+            z-index: -10;
+            transition: 0.5s;
+        }
+        .cls117
+        {
+            position: absolute;
+            width: 14%;
+            height: 10vh;
+            background-color: rgb(245, 245, 245);
+            border: 2px solid rgb(245, 245, 245);
+            left: -2%;
+            top: 5vh;
+            transform: rotateZ(45deg);
+            z-index: -1;
+            transition: 0.5s;
+        }
+        .cls110:hover
+        {
+            background-color: rgb(247, 77, 77);
+            border-right-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls110:hover .cls116
+        {
+            background-color: rgb(247, 77, 77);
+            border-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls110:hover .cls122
+        {
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        .cls110:hover .cls123
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls110:hover .cls125
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls111:hover
+        {
+            background-color: rgb(247, 77, 77);
+            border-right-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls111:hover .cls116
+        {
+            background-color: rgb(247, 77, 77);
+            border-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls111:hover .cls122
+        {
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        .cls111:hover .cls123
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls111:hover .cls125
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls112:hover
+        {
+            background-color: rgb(247, 77, 77);
+            border-right-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls112:hover .cls116
+        {
+            background-color: rgb(247, 77, 77);
+            border-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls112:hover .cls122
+        {
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        .cls112:hover .cls123
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls112:hover .cls125
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls113:hover
+        {
+            background-color: rgb(247, 77, 77);
+            border-right-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls113:hover .cls117
+        {
+            background-color: rgb(247, 77, 77);
+            border-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls113:hover .cls122
+        {
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        .cls113:hover .cls123
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls113:hover .cls125
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls114:hover
+        {
+            background-color: rgb(247, 77, 77);
+            border-right-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls114:hover .cls117
+        {
+            background-color: rgb(247, 77, 77);
+            border-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls114:hover .cls122
+        {
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        .cls114:hover .cls123
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls114:hover .cls125
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls115:hover
+        {
+            background-color: rgb(247, 77, 77);
+            border-right-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls115:hover .cls117
+        {
+            background-color: rgb(247, 77, 77);
+            border-color: rgb(247, 77, 77);
+            transition: 0.5s;
+        }
+        .cls115:hover .cls122
+        {
+            color: rgb(255, 255, 255);
+            transition: 0.5s;
+        }
+        .cls115:hover .cls123
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls115:hover .cls125
+        {
+            color: white;
+            transition: 0.5s;
+        }
+        .cls118
+        {
+            position: absolute;
+            font-size: 35px;
+            top: 10%;
+            left: 5%;
+        }
+        .cls119
+        {
+            position: absolute;
+            font-size: 22px;
+            left: 22%;
+            top: 10%;
+        }
+        .cls120
+        {
+            position: absolute;
+            top: 35%;
+            left: 22%;
+            font-size: 14.5px;
+        }
+        .cls122
+        {
+            position: absolute;
+            left: 22%;
+            top: 23%;
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .cls123
+        {
+            position: absolute;
+            left: 22%;
+            top: 70%;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        .cls125
+        {
+            position: absolute;
+            top: 17%;
+            font-size: 25px;
+            font-weight: bolder;
+            color: rgb(247, 77, 77);
+        }
+        .cls126
+        {
+            position: absolute;
+            width:9500%;
+            height: 3vh;
+            border: 3px solid white;
+            top: 20.5vh;
+            border-radius: 50%;
+            background-color: rgb(247, 77, 77);
+        }
+        .cls127
+        {
+            position: absolute;
+            width:9500%;
+            height: 3vh;
+            border: 3px solid white;
+            top: 27vh;
+            border-radius: 50%;
+            background-color: rgb(247, 77, 77);
+        }
+        .cls128
+        {
+            position: absolute;
+            width:9500%;
+            height: 3vh;
+            border: 3px solid white;
+            top: 72.5vh;
+            border-radius: 50%;
+            background-color: rgb(247, 77, 77);
+        }
+        .cls129
+        {
+            position: absolute;
+            width:9500%;
+            height: 3vh;
+            border: 3px solid white;
+            top: 80vh;
+            border-radius: 50%;
+            background-color: rgb(247, 77, 77);
+        }
+        .cls130
+        {
+            position: absolute;
+            width:9500%;
+            height: 3vh;
+            border: 3px solid white;
+            top: 140.5vh;
+            border-radius: 50%;
+            background-color: rgb(247, 77, 77);
+        }
+        .cls131
+        {
+            position: absolute;
+            width:9500%;
+            height: 3vh;
+            border: 3px solid white;
+            top: 147vh;
+            border-radius: 50%;
+            background-color: rgb(247, 77, 77);
+        }
+        .cls132
+        {        
+            position: absolute;
+            width: 8%;
+            height: 9vh;
+            border: 2px solid rgb(247, 77, 77);
+            border-radius: 5px;
+            bottom: 65vh;
+            left: 46%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: rgb(247, 77, 77);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+            <div class="cls1">
+                <div class="wow cls2 zoomIn animated">
+                    <div class="cls7">
+                        <img src="c.png" width="100%" height="100%">
+                        <div class="cls3"></div>
+                    </div>
+                    <div class="cls4"><p>Hello! I Am Suryansh Garg </p></div>
+                    <div class="cls5">A Learning Web-Developer</div>
+                    <div class="cls6"><button>Hire Me!</button></div>
+                </div>
+            </div>
+       <img src="a.jpg" width="100%" height="100%"> 
+    </div>
+    <div class="container2">
+        <div class="cls8"><a href="#">HOME</a></div>
+        <div class="cls9"><a href="#aboutme">ABOUT ME</a></div>
+        <div class="cls10"><a href="#skills">MY SKILLS</a></div>
+        <div class="cls11"><a href="#portfolio">PORTFOLIO</a></div>
+        <div class="cls12"><a href="#experience">EXPERIENCE</a></div>
+        <div class="cls13"><a href="#contact">CONTACT</a></div>
+    </div>
+    <div class="wow container3 fadeInLeft animated" data-wow-duration="1.5s" data-wow-delay="0.2s" id="aboutme">
+        <div class="cls14"><p>ABOUT ME</p></div>
+        <div class="cls15"><p>Always Looking for new Experiences</p></div>
+        <div class="cls16"><p>My Passion</p></div>
+        <div class="cls17"><p>I always appreciate an oppurtunity to learn something new in any field.I enjoy learning new things that challenge my limits and for that purpose I indulge myself in some or the other activity</p></div>
+        <div class="cls18"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia possimus nihil amet ex rerum quos pariatur velit, iste illo adipisci. Rerum cupiditate hic sunt culpa odio libero quod ea ad.</p></div>
+        <div class="cls19"><p><span class="cls22"><i class="fas fa-check"></i></span><span class="cls23">Sonsectetur Morbi sagittis, sem quisci ipsum gravida tortor</span></p></div>
+        <div class="cls20"><p><span class="cls22"><i class="fas fa-check"></i></span><span class="cls23">Sagittis, sem quis lacinia faucibus, orci ipsum gravida</span></p></div>
+        <div class="cls21"><p><span class="cls22"><i class="fas fa-check"></i></span><span class="cls23">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</span></p></div>
+        <div class="cls24"></div>
+    </div>
+    <div class="container4" id="skills">
+        <div class="cls25"><p>MY SKILLS</p></div>
+        <div class="cls26"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p></div>
+        <div class="wow cls27 zoomIn animated" data-wow-delay="1s"><i class="fas fa-tree"></i></div>
+        <div class="wow cls28 zoomIn animated" data-wow-delay="1s"><i class="fas fa-bullseye"></i></div>
+        <div class="wow cls29 zoomIn animated" data-wow-delay="1s"><i class="fas fa-tv"></i></div>
+        <div class="wow cls30 zoomIn animated" data-wow-delay="1s"><i class="fas fa-mobile-alt"></i></div>
+        <div class="wow cls31 slideInUp animated"><p>User Experience</p></div>
+        <div class="wow cls32 slideInUp animated"><p>Designing</p></div>
+        <div class="wow cls33 slideInUp animated"><p>Front-end</p></div>
+        <div class="wow cls34 slideInUp animated"><p>Mobile App</p></div>
+        <div class="wow cls35 slideInDown animated"><p>Lorem Ipsum is simply dummy <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text of the printing and <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typesetting industry.</p></div>
+        <div class="wow cls36 slideInDown animated"><p>Lorem Ipsum is simply dummy <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text of the printing and <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typesetting industry.</p></div>
+        <div class="wow cls37 slideInDown animated"><p>Lorem Ipsum is simply dummy <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text of the printing and <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typesetting industry.</p></div>
+        <div class="wow cls38 slideInDown animated"><p>Lorem Ipsum is simply dummy <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text of the printing and <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typesetting industry.</p></div>
+    </div>
+    <div class="container6" id="myskills">
+        <div class="cls65"><p>TECHNICAL SKILLS</p></div>
+        <div class="cls66"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur dignissimos voluptates? Minima quia quasi, nihil vero placeat temporibus. Consectetur voluptas non nostrum quam numquam, eum dolorum aliquid porro nesciunt.<br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis provident quod ab, ea enim error! Sequi excepturi accusamus voluptatum fuga porro maxime temporibus illum unde eligendi a? Neque, sit sunt?</p></div>
+        <div class="cls67">
+            <div class="cls72">HTML/HTML5</div>
+            <div class="cls73"></div>
+            <div class="cls74"><p>60%</p></div>
+        </div>
+        <div class="cls68">
+             <div class="cls75">ASP.Net</div>
+            <div class="cls76"></div>
+            <div class="cls77"><p>40%</p></div>
+        </div>
+        <div class="cls69">
+                <div class="cls78">Java</div>
+                <div class="cls79"></div>
+                <div class="cls80"><p>20%</p></div>
+        </div>
+        <div class="cls70">
+                <div class="cls81">JavaScript/jQuery</div>
+                <div class="cls82"></div>
+                <div class="cls83"><p>60%</p></div>
+        </div>
+        <div class="cls71">
+                <div class="cls84">CSS/CSS3</div>
+                <div class="cls85"></div>
+                <div class="cls86"><p>80%</p></div>
+        </div>
+    </div>
+    <div class="container7" id="portfolio">
+        <div class="cls87">PORTFOLIO</div>
+        <div class="cls88">Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</div>
+        <div class="cls89">ALL</div>
+        <div class="cls90">DESIGNING</div>
+        <div class="cls91">DEVELOPMENT</div>
+        <div class="cls92">WEB APP</div>
+        <div class="cls93">MOBILE APP</div>
+        <div class="wow cls94 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls95 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls96 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls97 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls98 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls99 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls100 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+        <div class="wow cls101 fadeInLeft animated"><div class="cls102"><div class="cls103"></div><div class="cls104"><p><span class="cls105">WARM</span><span class="cls106">OSCAR</span><span class="cls107">Oscar is a decent man</span></p></div></div></div>
+    </div>
+    <div class="container8" id="experience">
+        <div class="cls108">2016</div>
+        <div class="cls109">
+            <div class="cls126"></div>
+            <div class="cls127"></div>
+            <div class="cls128"></div>
+            <div class="cls129"></div>
+            <div class="cls130"></div>
+            <div class="cls131"></div>
+        </div>
+        <div class="cls110"><div class="cls122">UI/UX Designer</div><div class="cls123"><p><span class="cls124">Read More</span><span class="cls125">&nbsp;&nbsp;></span></p></div><p><span class="cls118">Oct</span><span class="cls119">FACEBOOK</span><span class="cls120">October 2014 - November 2014 (2 months)Menlo<br>Park, CA, United States of America or one who <br> avoids a pain that produces no resultant<br>pleasure...</span></p><div class="cls116"></div></div>
+        <div class="cls111"><div class="cls122">UI/UX Designer</div><div class="cls123"><p><span class="cls124">Read More</span><span class="cls125">&nbsp;&nbsp;></span></p></div><p><span class="cls118">Apr</span><span class="cls119">MICROSOFT</span><span class="cls120">October 2014 - November 2014 (2 months)Menlo<br>Park, CA, United States of America or one who <br> avoids a pain that produces no resultant<br>pleasure...</span></p><div class="cls116"></div></div>
+        <div class="cls112"><div class="cls122">UI/UX Designer</div><div class="cls123"><p><span class="cls124">Read More</span><span class="cls125">&nbsp;&nbsp;></span></p></div><p><span class="cls118">Aug</span><span class="cls119">FLIPKART</span><span class="cls120">October 2014 - November 2014 (2 months)Menlo<br>Park, CA, United States of America or one who <br> avoids a pain that produces no resultant<br>pleasure...</span></p><div class="cls116"></div></div>
+        <div class="cls113"><div class="cls122">UI/UX Designer</div><div class="cls123"><p><span class="cls124">Read More</span><span class="cls125">&nbsp;&nbsp;></span></p></div><p><span class="cls118">Aug</span><span class="cls119">GOOGLE</span><span class="cls120">October 2014 - November 2014 (2 months)Menlo<br>Park, CA, United States of America or one who <br> avoids a pain that produces no resultant<br>pleasure...</span></p><div class="cls117"></div></div>
+        <div class="cls114"><div class="cls122">UI/UX Designer</div><div class="cls123"><p><span class="cls124">Read More</span><span class="cls125">&nbsp;&nbsp;></span></p></div><p><span class="cls118">Feb</span><span class="cls119">APPLE</span><span class="cls120">October 2014 - November 2014 (2 months)Menlo<br>Park, CA, United States of America or one who <br> avoids a pain that produces no resultant<br>pleasure...</span></p><div class="cls117"></div></div>
+        <div class="cls115"><div class="cls122">UI/UX Designer</div><div class="cls123"><p><span class="cls124">Read More</span><span class="cls125">&nbsp;&nbsp;></span></p></div><p><span class="cls118">Jan</span><span class="cls119">AMAZON</span><span class="cls120">October 2014 - November 2014 (2 months)Menlo<br>Park, CA, United States of America or one who <br> avoids a pain that produces no resultant<br>pleasure...</span></p><div class="cls117"></div></div>
+        <div class="cls132">2014</div>
+    </div>
+    <div class="container5" id="contact">
+        <div class="cls39"><p>CONTACT US</p></div>
+        <div class="wow cls40 fadeInLeft animated">
+            <div class="cls42"><p>UNIQUE Infoway</p></div>
+            <div class="cls43"><p>104, Some street, New York, USA</p></div>
+            <div class="cls44"><p>call us</p></div>
+            <div class="cls45"><p>+91 9557277690</p></div>
+            <div class="cls46"><p>Email us</p></div>
+            <div class="cls47"><p>suryansh.garg345@gmail.com</p></div>
+        </div>
+        <div class="cls61">
+            <div class="wow cls48 zoomIn animated" data-wow-delay="1s" data-wow-duration="0.5s"><i class="fab fa-twitter"></a></i></div>
+            <div class="wow cls49 zoomIn animated" data-wow-delay="1.2s" data-wow-duration="0.5s"><i class="fab fa-facebook-f"></i></div>
+            <div class="wow cls50 zoomIn animated" data-wow-delay="1.4s" data-wow-duration="0.5s"><i class="fab fa-pinterest"></i></div>
+            <div class="wow cls51 zoomIn animated" data-wow-delay="1.6s" data-wow-duration="0.5s"><i class="fab fa-google-plus-g"></i></div>
+        </div>
+        <div class="wow cls41 fadeInLeft animated" data-wow-delay="0.5s">
+            <div class="cls52"><input class="cls57" type="text" placeholder="Your Name *"></div>
+            <div class="cls53"><input class="cls58" type="email" placeholder="Your E-Mail *"></div>
+            <div class="cls54"><textarea class="cls59" name="" id="" cols="77" rows="13" placeholder="Your Message *"></textarea></div>
+        </div>
+        <div class="cls55"><input class="cls60" type="submit" value="SEND MESSAGE"></div>
+        <div class="cls56"></div>
+        <div class="cls62"><p><span class="cls63">Copyright <i class="far fa-copyright"></i> reserved, Template by</span><span class="cls64"> WebThemez.com.</span></p></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+</html>
